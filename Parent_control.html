@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parental Control</title>
+    <link rel="stylesheet" href="CSS/Parent_control.css">
+</head>
+<body>
+    <header>
+        <h1>Parental Control</h1>
+    </header>
+    <main>
+        <section id="settings">
+            <h2>Settings</h2>
+            <form id="settings-form">
+                <label for="blocked-websites">Blocked Websites:</label>
+                <textarea id="blocked-websites" name="blocked-websites"></textarea>
+                <br>
+                <label for="allowed-games">Allowed Games:</label>
+                <textarea id="allowed-games" name="allowed-games"></textarea>
+                <br>
+                <label for="time-limit">Time Limit (minutes):</label>
+                <input type="number" id="time-limit" name="time-limit" value="60">
+                <br>
+                <label for="schedule">Schedule:</label>
+                <select id="schedule" name="schedule">
+                    <option value="always">Always</option>
+                    <option value="weekdays">Weekdays</option>
+                    <option value="weekends">Weekends</option>
+                    <option value="custom">Custom</option>
+                </select>
+                <br>
+                <label for="custom-schedule">Custom Schedule:</label>
+                <input type="text" id="custom-schedule" name="custom-schedule" placeholder="e.g. Monday 8am-10am, Tuesday 2pm-4pm">
+                <br>
+                <label for="alert-email">Alert Email:</label>
+                <input type="email" id="alert-email" name="alert-email" placeholder="e.g. parent@example.com">
+                <br>
+                <label for="alert-frequency">Alert Frequency:</label>
+                <select id="alert-frequency" name="alert-frequency">
+                    <option value="immediately">Immediately</option>
+                    <option value="hourly">Hourly</option>
+                    <option value="daily">Daily</option>
+                </select>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password">
+                <br>
+                <button id="save-settings">Save Settings</button>
+            </form>
+        </section>
+        <section id="monitoring">
+            <h2>Monitoring</h2>
+            <ul id="website-history">
+                <!-- website history will be displayed here -->
+            </ul>
+            <button id="clear-history">Clear History</button>
+        </section>
+        <section id="blocking">
+            <h2>Blocking</h2>
+            <ul id="blocked-websites-list">
+                <!-- blocked websites will be displayed here -->
+            </ul>
+        </section>
+        <section id="game-monitoring">
+            <h2>Game Monitoring</h2>
+            <ul id="game-history">
+                <!-- game history will be displayed here -->
+            </ul>
+            <button id="clear-game-history">Clear Game History</button>
+        </section>
+        <section id="reports">
+            <h2>Reports</h2>
+            <button id="generate-report">Generate Report</button>
+            <div id="report-container">
+                <!-- report will be displayed here -->
+            </div>
+        </section>
+        <section id="user-management">
+            <h2>User Management</h2>
+            <button id="add-user">Add User</button>
+            <ul id="user-list">
+                <!-- user list will be displayed here -->
+            </ul>
+        </section>
+        <section id="notifications">
+            <h2>Notifications</h2>
+            <ul id="notification-list">
+                <!-- notification list will be displayed here -->
+            </ul>
+        </section>
+    </main>
+    <script src="JS/Parent_control.js"></script>
+</body>
+</html>

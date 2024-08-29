@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/Gamer_Section.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="left">
+        <img src="public/Gamer_Section/g2.jpg" alt="">
+    </div>
+    <div class="mid">
+        <h1>Play Games</h1>
+        <form action="https://www.smbgames.be/">
+
+        <button class="btn">
+            <img src="public/Gamer_Section/mario.webp" alt="Mario">
+            <span>Mario</span>
+            
+        </button>
+         </form>
+         <form action="https://chromedino.com/joker/">
+        <button class="btn">
+            <img src="public/Gamer_Section/joker.jpg" alt="Joker">
+            <span>Joker</span>
+        </button>
+    </form>
+    <form action="https://chromedino.com/color/">
+       <button class="btn">
+        <img src="public/Gamer_Section/dino.jpg" alt="Dino">
+            <span>Dino</span>
+       </button>
+    </form>
+    </div>
+    <nav class="uper">
+        
+        <ul>
+            
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Run</a></li>
+            <li><a href="#">More</a></li>
+            <div class="search">               
+                <input type="text"  name="search" id="search" placeholder="Search more games" >
+            </div>
+        </ul>
+    </nav>
+    
+    <button class="btn" onclick="redirectToOtherPage()" >FeedBack</button>
+
+    <script>
+        function redirectToOtherPage() {
+            window.location.href = "FeedBack.html";
+        }
+    </script>
+
+</body>
+</html>

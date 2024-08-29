@@ -1,0 +1,64 @@
+.header {
+    background-color: #006400; /* Forest Green */
+    text-align: center;
+    color: white;
+    /* padding: 10px 0; */ position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+html {
+    background-color: black;
+    background-image: url('../public/Login/Background_img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login {
+    color: #f0f0f0; /* Light Grey */
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for contrast */
+    border-radius: 10px;
+    width: 300px;
+    margin: 50px auto;
+}
+
+.login h1 , .login h2 {
+    color: #ffffff; /* White for headings */
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login label , .login input {
+    margin: 10px 0;
+}
+
+.login input[type="text"], .login input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login input[type="submit"] {
+    background-color: #006400; /* Forest Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+    background-color: #228B22; /* Lighter Green on hover */
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.911);
+    color: #f0f0f0;
+}
